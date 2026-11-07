@@ -1,7 +1,7 @@
 Public Holidays (OMIS Class 9 Hands-On Activity)
 
-PublicHolidays.csv: public holidays for 38 countries or regions, 1970 to 2098.
-69,557 rows. UTF-8, comma-delimited, header row.
+PublicHolidays.csv: public holidays in 1997 for 37 countries or regions.
+418 rows. UTF-8, comma-delimited, header row.
 Columns: countryOrRegion, holidayName, normalizeHolidayName, isPaidTimeOff, countryRegionCode, date (yyyy-mm-dd).
 
 Source: Microsoft Azure Open Datasets, Public Holidays
@@ -10,4 +10,6 @@ which combines data from Wikipedia (Wikimedia Foundation Inc) and the PyPI holid
 
 Licence: Creative Commons Attribution-ShareAlike 3.0 Unported
 https://creativecommons.org/licenses/by-sa/3.0/
-Converted from Parquet to CSV, rows sorted by country and date. No values changed.
+Changes from the source: converted from Parquet to CSV, kept only 1997, and removed
+the weekly "Sondag" (Sunday) rows the source lists for Norway and Sweden.
+Rows sorted by country and date. No values changed.
